@@ -52,12 +52,12 @@ menu:
   - title:             Example
     url:               /example/
     submenu:           
-      - title:           서린아
+      - title:           huhuhu
         url:             /test/
   - title:             Documentation
     url:               /docs/
     submenu:           
-      - title:           보고있니
+      - title:           hi
         url:             /test2/
   - title:             About
     url:               /about/
