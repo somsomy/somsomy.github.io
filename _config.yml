@@ -48,16 +48,24 @@ author:
 
 # Add links to the sidebar.
 menu:
+  - title:             Learning(1)
+    url:               /programming1/
+    submenu:
+       - title:             Java
+         url:               /java/
+       - title:             JSP
+         url:               /jsp/
+  - title:             Learning(2)
+    url:               /programming2/
+    submenu:
+       - title:             HTML
+         url:               /html/
+       - title:             CSS
+         url:               /css/
   - title:             Example
     url:               /example/
-    submenu:           
-      - title:           huhuhu
-        url:             /test/
   - title:             Documentation
     url:               /docs/
-    submenu:           
-      - title:           hi
-        url:             /test2/
   - title:             About
     url:               /about/
 

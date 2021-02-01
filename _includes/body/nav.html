@@ -5,12 +5,8 @@
       {% assign url = node.url | default: node.href %}
       {% assign count = count | plus: 1 %}
       <li>
-        <div class="menu-wrapper" onmouseover="javascript:spread({{count}})" onmouseout="javascript:spread({{count}})">
-          {% if node.submenu %}
-          <button class="spread-btn">
-              <span id="spread-icon-{{count}}" class="material-icons">arrow_right</span>
-          </button>
-          {% endif %}
+        <div class="menu-wrapper" onclick="javascript:spread({{count}})" onclick="javascript:spread({{count}})">
+   
           <a
             {% if forloop.first %}id="_drawer--opened"{% endif %}
             href="{% include_cached smart-url url=url %}"
@@ -19,7 +15,14 @@
             >
             {{ node.name | default:node.title }}
           </a>
-        
+
+                      
+  {% if node.submenu %}
+          <button class="spread-btn">
+              <span id="spread-icon-{{count}}" class="material-icons">arrow_drop_down</span>
+          </button>
+          {% endif %}  
+
           {% if node.submenu %}
           <div id="submenu-{{count}}" class="menu-wrapper submenu hide">
             <ul style="list-style: none;">
